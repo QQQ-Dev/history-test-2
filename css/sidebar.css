@@ -92,6 +92,8 @@
   }
   
   .text{
+    display: flex;
+    flex-direction: column;
       text-align: center;
       margin-top: 75px;
       color: black;
@@ -106,9 +108,11 @@
       background-color: #009688;  
       padding: 10px;
       cursor: pointer;
-    
+    margin: 10px;
     }
-    
+    .text span:active{
+      color: white;
+    }
     @keyframes fadeInRight{
         0%{
             transform: translateX(40px);
