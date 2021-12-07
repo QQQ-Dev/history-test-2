@@ -23,3 +23,43 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+function otkNav() {
+  document.getElementById("otkSidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function atkNav() {
+  document.getElementById("otkSidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+function ftkNav() {
+  document.getElementById("ftkSidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function rtkNav() {
+  document.getElementById("ftkSidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+
+function gtkNav() {
+  document.getElementById("gtkSidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function ntkNav() {
+  document.getElementById("gtkSidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+

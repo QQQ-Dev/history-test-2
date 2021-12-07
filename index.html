@@ -1,68 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Quiz App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/sidebar.css">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
- 
-</head>
-<body>
+  <head>
+    <title>Quiz App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <button class="dropdown-btn">
+        История 6 класс
 
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<button class="dropdown-btn">История 6 класс
-	
-			<i class="fa fa-caret-down"></i>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="./6k/6k-p1.html">§1.Древняя история - начало цивилизации</a>
+        <a href="./6k/6k-p2.html"
+          >§2.Ранние этапы развития древнейшего человека</a
+        >
+        <a href="./6k/6k-p3.html">§3.Родовое общество</a>
+        <a href="./6k/6k-p4.html"
+          >§4.Культура эпохи энеолита и бронзового века</a
+        >
+        <a href="./6k/6k-p5.html"
+          >§5.Средняя Азия при переходе к железному веку</a
+        >
+      </div>
+
+      <button class="dropdown-btn">
+        История 7 класс
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="./p1.html">Параграф 1</a>
+        <a href="./p2.html">Параграф 2</a>
+        <a href="#">Параграф 3</a>
+        <a href="#">Параграф 4</a>
+      </div>
+      <button class="dropdown-btn">
+        История 8 класс
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="./p1.html">Параграф 1</a>
+        <a href="./p2.html">Параграф 2</a>
+        <a href="#">Параграф 3</a>
+        <a href="#">Параграф 4</a>
+      </div>
+    </div>
+    <div id="otkSidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="atkNav()"
+        >&times;</a
+      >
+      <button class="dropdown-btn">
+        Химия 7 класс
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="./p1.html">Параграф 1</a>
+        <a href="./p2.html">Параграф 2</a>
+        <a href="#">Параграф 3</a>
+        <a href="#">Параграф 4</a>
+      </div>
+    </div>
+    <div id="ftkSidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="rtkNav()"
+        >&times;</a
+      >
+      <button class="dropdown-btn">
+        Биология 7 класс
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="./p1.html">Параграф 1</a>
+        <a href="./p2.html">Параграф 2</a>
+        <a href="#">Параграф 3</a>
+        <a href="#">Параграф 4</a>
+      </div>
+    </div>
+	<div id="gtkSidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="ntkNav()"
+		  >&times;</a
+		>
+		<button class="dropdown-btn">
+		  География 7 класс
+		  <i class="fa fa-caret-down"></i>
 		</button>
-			<div class="dropdown-container">
-				<a href="./6k/6k-p1.html">§1.Древняя история - начало цивилизации</a>
-				<a href="./6k/6k-p2.html">§2.Ранние этапы развития древнейшего человека</a>
-				<a href="./6k/6k-p3.html">§3.Родовое общество</a>
-				<a href="./6k/6k-p4.html">§4.Культура эпохи энеолита и бронзового века</a>
-				<a href="./6k/6k-p5.html">§5.Средняя Азия при переходе к железному веку</a>
-			</div>
-		  
-		<button class="dropdown-btn">История 7 класс
-			<i class="fa fa-caret-down"></i>
-		  </button>
-	<div class="dropdown-container">
-		<a href="./p1.html">Параграф 1</a>
-		<a href="./p2.html">Параграф 2</a>
-		<a href="#">Параграф 3</a>
-		<a href="#">Параграф 4</a>
-	</div>
-	<button class="dropdown-btn">История 8 класс
-		<i class="fa fa-caret-down"></i>
-	  </button>
-	  <div class="dropdown-container">
-		<a href="./p1.html">Параграф 1</a>
-		<a href="./p2.html">Параграф 2</a>
-		<a href="#">Параграф 3</a>
-		<a href="#">Параграф 4</a>
-	</div>
-		<a href="./index.html">Вернуться на главную</a>
-		
-		  </div>
+		<div class="dropdown-container">
+		  <a href="./p1.html">Параграф 1</a>
+		  <a href="./p2.html">Параграф 2</a>
+		  <a href="#">Параграф 3</a>
+		  <a href="#">Параграф 4</a>
+		</div>
 	  </div>
-	  
-	
-			<div class="text" id="">
-				<h1>Чтобы начать выберите параграф</h1>
-				<div style="width: 100%; height: 20px;"></div>
-				<span onclick="openNav()">Выбрать параграф</span>
+  
+    <div class="text" id="">
+      <h1>Чтобы начать выберите предмет</h1>
+      <div style="width: 100%; height: 20px"></div>
+      <span onclick="openNav()">История</span>
+      <span onclick="otkNav()">Химия</span>
+      <span onclick="ftkNav()">Биология</span>
+	  <span onclick="gtkNav()">География</span>
+    </div>
 
-			</div>
-	
-		<!-- Use any element to open the sidenav -->
-		
-	
-<script src="js/question.js"></script>
-<script src="js/app.js"></script>
-<script src="js/side.js"></script>
+    <!-- Use any element to open the sidenav -->
 
-</body>
+    <script src="js/question.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/side.js"></script>
+  </body>
 </html>
-
-
