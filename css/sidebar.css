@@ -111,14 +111,23 @@
 }
 
 .text span {
-  background-color: #009688;
+  border: 1px solid #2196f3;
+  color:#2196f3;
   padding: 10px;
   cursor: pointer;
   margin: 10px;
+  transition: .3s;
+}
+
+.text span:hover{
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3, 0 0 10px #2196f3;
 }
 .text span:active {
   color: white;
 }
+
 @keyframes fadeInRight {
   0% {
     transform: translateX(40px);
